@@ -29,7 +29,7 @@ parser.add_argument("--api-key", dest='api_key', required=True, help="containing
 parser.add_argument("--project", dest='project_name', required=True)
 parser.add_argument("--version", dest="version_name", required=True)
 parser.add_argument("--comment", dest="new_comment")
-parser.add_argument("--component_list_file", dest="component_list")
+parser.add_argument("--component_list_file", dest="component_list", help="location of component list. must have one component name per line")
 parser.add_argument("--no-verify", dest='verify', action='store_false', help="disable TLS certificate verification")
 parser.add_argument("--ignore", dest="ignore_comp", action='store_true', help='ignore component after comment')
 args = parser.parse_args()
