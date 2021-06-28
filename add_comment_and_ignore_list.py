@@ -23,7 +23,7 @@ def readComponentList(compFile):
     return compList
 
 
-parser = argparse.ArgumentParser("Bulk add component comments from a supplied list to a specific project version")
+parser = argparse.ArgumentParser("Bulk add component comments (and optionally ignore) from a supplied list to a specific project version")
 parser.add_argument("--base-url", required=True, help="Hub server URL e.g. https://your.blackduck.url")
 parser.add_argument("--api-key", dest='api_key', required=True, help="containing access token")
 parser.add_argument("--project", dest='project_name', required=True)
