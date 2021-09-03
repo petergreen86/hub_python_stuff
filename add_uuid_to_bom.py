@@ -1,8 +1,6 @@
 from blackduck import Client
 import logging
 import argparse
-import sys
-from pprint import pprint
 import requests
 import pandas as pd
 
